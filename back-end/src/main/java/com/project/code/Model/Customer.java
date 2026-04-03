@@ -14,13 +14,13 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @NotNull(message = "Email cannot be null")
+    @NotNull(message = "Name cannot be null")
     private String name;
 
     @NotNull(message = "Email cannot be null")
     private String email;
 
-    @NotNull(message = "Email cannot be null")
+    @NotNull(message = "Phone cannot be null")
     private String phone;
 
     @OneToMany(mappedBy = "customer", fetch = FetchType.EAGER)
